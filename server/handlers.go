@@ -5,12 +5,7 @@ import (
 	"net/http"
 )
 
-type country struct {
-	Name     string
-	Languaje string
-}
-
-func Index(w *http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
 		if r.Method != "GET" {
@@ -23,10 +18,10 @@ func Index(w *http.ResponseWriter, r *http.Request) {
 	})
 }
 
-func GetCountries(w *http.ResponseWriter, r *http.Request) {
+func GetCountries(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func AddCountrie(w *http.ResponseWriter, r *http.Response) {
+func AddCountrie(w http.ResponseWriter, r *http.Request) {
 
 }
