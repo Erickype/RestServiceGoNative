@@ -23,10 +23,10 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
-func GetCountries(w *http.ResponseWriter, r *http.Request) {
+func GetCountries(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func AddCountrie(w *http.ResponseWriter, r *http.Response) {
+func AddCountrie(w http.ResponseWriter, r *http.Response) {
 
 }
