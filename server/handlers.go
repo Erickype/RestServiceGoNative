@@ -22,3 +22,11 @@ func Index(w *http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello there %s", "visitor")
 	})
 }
+
+func GetCountries(w *http.ResponseWriter, r *http.Request) {
+
+}
+
+func AddCountrie(w *http.ResponseWriter, r *http.Response) {
+
+}
