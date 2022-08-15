@@ -5,6 +5,11 @@ import (
 	"net/http"
 )
 
+type country struct {
+	Name     string
+	Languaje string
+}
+
 func Index(w *http.ResponseWriter, r *http.Request) {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
