@@ -25,5 +25,14 @@ func GetCountries(w http.ResponseWriter, r *http.Request) {
 }
 
 func AddCountrie(w http.ResponseWriter, r *http.Request) {
+	country := &Country{}
+	err := json.NewDecoder(r.Body).Decode(country)
+	if err != nil {
+		w.WriteHeader(http.StatusBadGateway)
+		fmt.Fprintf(w, "%v", err)
+		return
+	}
 
+	countries = append(countries, country)
+	fmt.Fprintf(w, "Country was added:  %v", country)
 }
