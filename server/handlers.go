@@ -10,7 +10,7 @@ type country struct {
 	Languaje string
 }
 
-func Index(w *http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
 		if r.Method != "GET" {
